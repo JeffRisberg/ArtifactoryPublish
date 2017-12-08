@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ArtifactoryPublish.iml" filepath="$PROJECT_DIR$/.idea/modules/ArtifactoryPublish.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ArtifactoryPublish_main.iml" filepath="$PROJECT_DIR$/.idea/modules/ArtifactoryPublish_main.iml" group="ArtifactoryPublish" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ArtifactoryPublish_test.iml" filepath="$PROJECT_DIR$/.idea/modules/ArtifactoryPublish_test.iml" group="ArtifactoryPublish" />
+    </modules>
+  </component>
+</project>
