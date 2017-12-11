@@ -1,6 +1,6 @@
-package com.incra.services;
+package com.company.services;
 
-import com.incra.models.Message;
+import com.company.models.Message;
 
 import java.util.List;
 

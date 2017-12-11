@@ -1,6 +1,6 @@
-package com.incra.services;
+package com.company.services;
 
-import com.incra.models.Incident;
+import com.company.models.Incident;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

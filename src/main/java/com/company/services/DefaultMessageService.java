@@ -1,6 +1,6 @@
-package com.incra.services;
+package com.company.services;
 
-import com.incra.models.User;
+import com.company.models.Message;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,18 +11,18 @@ import java.util.List;
 
 /**
  * @author Jeff Risberg
- * @since 11/20/17
+ * @since 12/05/17
  */
-public class DefaultUserService extends AbstractService implements UserService {
-  private static final Logger logger = LoggerFactory.getLogger(DefaultUserService.class);
+public class DefaultMessageService extends AbstractService implements MessageService {
+  private static final Logger logger = LoggerFactory.getLogger(DefaultMessageService.class);
 
-  public User getOne(Long id) {
+  public Message getOne(Long id) {
     try {
       EntityManager em = getEntityManager();
 
       em.getTransaction().begin();
 
-      User result = em.find(User.class, id);
+      Message result = em.find(Message.class, id);
 
       em.getTransaction().commit();
       em.close();
@@ -33,15 +33,15 @@ public class DefaultUserService extends AbstractService implements UserService {
     }
   }
 
-  public List<User> getList(int limit, int offset) {
+  public List<Message> getList(int limit, int offset) {
     try {
       EntityManager em = getEntityManager();
 
       em.getTransaction().begin();
 
-      TypedQuery<User> query =
-          em.createQuery("SELECT u FROM User u", User.class);
-      List<User> result = query.getResultList();
+      TypedQuery<Message> query =
+          em.createQuery("SELECT m FROM Message m", Message.class);
+      List<Message> result = query.getResultList();
 
       em.getTransaction().commit();
       em.close();

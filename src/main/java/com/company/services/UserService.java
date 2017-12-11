@@ -1,6 +1,6 @@
-package com.incra.services;
+package com.company.services;
 
-import com.incra.models.User;
+import com.company.models.User;
 
 import java.util.List;
 

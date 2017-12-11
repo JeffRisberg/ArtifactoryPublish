@@ -1,4 +1,4 @@
-package com.incra.models;
+package com.company.models;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -7,25 +7,20 @@ import lombok.NoArgsConstructor;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.Table;
 
 @Entity
-@Table(name="incident")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Incident {
+public class Message {
 
     @Column(name = "Id")
     @Id
     protected Long id;
 
-    @Column(name = "title")
-    protected String title;
+    @Column(name = "sender")
+    protected String sender;
 
-    @Column(name = "description")
-    protected String description;
-
-    @Column(name = "severity")
-    protected String severity;
+    @Column(name = "text")
+    protected String text;
 }

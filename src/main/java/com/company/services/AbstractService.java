@@ -1,4 +1,4 @@
-package com.incra.services;
+package com.company.services;
 
 import javax.naming.NamingException;
 import javax.persistence.EntityManager;

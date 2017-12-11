@@ -2,7 +2,7 @@
 apply plugin: 'java'
 apply plugin: 'maven-publish'
 
-group 'com.incra'
+group 'com.company'
 version '1.0-SNAPSHOT'
 
 buildscript {
@@ -53,7 +53,7 @@ artifactory {
 publishing {
     publications {
         mavenJava(MavenPublication) {
-            groupId 'com.incra'
+            groupId 'com.company'
             artifactId 'core'
             version '1.0'
 

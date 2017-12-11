@@ -1,4 +1,4 @@
-package com.incra.models;
+package com.company.models;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -10,19 +10,22 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="users")
+@Table(name="incident")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class User {
+public class Incident {
 
     @Column(name = "Id")
     @Id
     protected Long id;
 
-    @Column(name = "first_name")
-    protected String firstName;
+    @Column(name = "title")
+    protected String title;
 
-    @Column(name = "last_name")
-    protected String lastName;
+    @Column(name = "description")
+    protected String description;
+
+    @Column(name = "severity")
+    protected String severity;
 }
